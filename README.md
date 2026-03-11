@@ -42,3 +42,5 @@
 1. Install deps: `pip install -r requirements.txt`
 2. Copy env template and fill values: `cp .env.example .env`
 3. Start bot: `python3 bot.py`
+
+## Made by Codex, GPT-5.4
