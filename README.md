@@ -1,4 +1,4 @@
-# Lightweight Python Telegram bot for LLM chatting with user separation and multiple sessions support
+# Lightweight Python Telegram bot for LLM chatting with user separation and multiple session support
 
 - bot.py
 - requirements.txt
