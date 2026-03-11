@@ -1,45 +1,44 @@
-Lightweight Python Telegram bot with per-user session management
-and per-session chat history.
+# Lightweight Python Telegram bot for LLM chatting with user separation and multiple sessions support
 
- • bot.py
- • requirements.txt
- • .env.example
+- bot.py
+- requirements.txt
+- .env.example
 
-What it supports:
+## What it supports:
 
- • LLM chat over Telegram
- • Separate session lists per Telegram user
- • Independent message history per session
- • Session switching
- • Session creation
- • Session renaming
- • Current session lookup
+- LLM chat over Telegram
+- Separate session lists per Telegram user
+- Independent message history per session
+- Session switching
+- Session creation
+- Session renaming
+- Current session lookup
 
-Commands:
+## Commands:
 
- • /start
- • /help
- • /new [name]
- • /sessions
- • /use <session_id>
- • /rename <session_id> <new name>
- • /current
+-  /start
+-  /help
+-  /new [name]
+-  /sessions
+-  /use <session_id>
+-  /rename <session_id> <new name>
+-  /current
 
-Implementation notes:
+## Implementation notes:
 
- • Uses sqlite3 for lightweight persistence
- • Stores:
-    • users
-    • sessions
-    • messages
- • Uses an OpenAI-compatible backend via env vars:
-    • TELEGRAM_BOT_TOKEN
-    • OPENAI_API_KEY
-    • OPENAI_MODEL
-    • optional OPENAI_BASE_URL
+-  Uses sqlite3 for lightweight persistence
+-  Stores:
+   - users
+   - sessions
+   - messages
+-  Uses an OpenAI-compatible backend via env vars:
+   - TELEGRAM_BOT_TOKEN
+   - OPENAI_API_KEY
+   - OPENAI_MODEL
+   - optional OPENAI_BASE_URL
 
-Run steps:
+## Run steps:
 
- 1 Install deps: pip install -r requirements.txt
- 2 Copy env template and fill values: cp .env.example .env
- 3 Start bot: python3 bot.py
+1. Install deps: `pip install -r requirements.txt`
+2. Copy env template and fill values: `cp .env.example .env`
+3. Start bot: `python3 bot.py`
